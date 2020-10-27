@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'HeQiangFramework'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of HeQiangFramework.'
+  s.summary          = '海贼王UI显示 HeQiangFramework.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,17 +18,19 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  海贼王UI显示SDK， 展示UI等。API调用模式使用了RAC
                        DESC
 
-  s.homepage         = 'https://github.com/heqiang2011@163.com/HeQiangFramework'
+  s.homepage         = 'https://github.com/HeQiang-IOS/HeQiangFramework'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'heqiang2011@163.com' => 'heqiang2011@163.com' }
-  s.source           = { :git => 'https://github.com/heqiang2011@163.com/HeQiangFramework.git', :tag => s.version.to_s }
+  s.author           = { 'heqiang' => 'heqiang2011@163.com' }
+  s.source           = { :git => 'https://github.com/HeQiang-IOS/HeQiangFramework.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
+  s.platform     = :ios, '9.0'
+  s.requires_arc = true
 
   s.source_files = 'HeQiangFramework/Classes/**/*'
   
@@ -39,4 +41,8 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit', 'Foundation'
+  s.dependency 'AFNetworking'
+  s.dependency 'JSONModel'
+  s.vendored_frameworks = 'HeQiangFramework/*.{framework}'
 end

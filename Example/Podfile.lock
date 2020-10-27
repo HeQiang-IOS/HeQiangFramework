@@ -1,0 +1,41 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - HeQiangFramework (0.1.0):
+    - AFNetworking
+    - JSONModel
+  - JSONModel (1.8.0)
+
+DEPENDENCIES:
+  - HeQiangFramework (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - JSONModel
+
+EXTERNAL SOURCES:
+  HeQiangFramework:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  HeQiangFramework: 2c268a96fb4c5c24c4d6daa5de6fc8bc9ab32c00
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+
+PODFILE CHECKSUM: 84c2f721ce5e8ae6527196f229bc6316327f4925
+
+COCOAPODS: 1.9.1

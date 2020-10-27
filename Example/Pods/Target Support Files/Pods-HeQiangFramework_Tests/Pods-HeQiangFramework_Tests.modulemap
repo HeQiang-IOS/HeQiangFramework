@@ -1,0 +1,6 @@
+framework module Pods_HeQiangFramework_Tests {
+  umbrella header "Pods-HeQiangFramework_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

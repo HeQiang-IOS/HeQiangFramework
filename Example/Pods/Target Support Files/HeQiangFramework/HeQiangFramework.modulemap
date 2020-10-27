@@ -1,0 +1,6 @@
+framework module HeQiangFramework {
+  umbrella header "HeQiangFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
